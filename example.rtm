@@ -1,0 +1,1117 @@
+object ppReport1: TppReport
+  AutoStop = False
+  DataPipeline = plListeDemandeeMemoire
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Report'
+  PrinterSetup.PaperName = 'Letter'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 6350
+  PrinterSetup.mmMarginRight = 10160
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 279401
+  PrinterSetup.mmPaperWidth = 215900
+  SaveAsTemplate = True
+  Template.DatabaseSettings.DataPipeline = plItem
+  Template.DatabaseSettings.Name = '58-StatsAdministratif'
+  Template.DatabaseSettings.NameField = 'ITEM_NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.SaveTo = stDatabase
+  Template.Format = ftASCII
+  UserName = 'Report'
+  DeviceType = 'Screen'
+  Left = 226
+  Top = 143
+  Version = '5.0'
+  mmColumnWidth = 0
+  object ppHeaderBand1: TppHeaderBand
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 21431
+    mmPrintPosition = 0
+    object ppSystemVariable1: TppSystemVariable
+      UserName = 'SystemVariable1'
+      VarType = vtDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 31221
+      BandType = 0
+    end
+    object TppLabel
+      UserName = 'Label1'
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Nom de l'#39'hopital (pav V -  Royal Victoria Hospital  ( V))'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      mmHeight = 4233
+      mmLeft = 38100
+      mmTop = 0
+      mmWidth = 139700
+      BandType = 0
+    end
+    object TppLabel
+      UserName = 'Label2'
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Détail du nombre d'#39'Examens par Salle'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      mmHeight = 4233
+      mmLeft = 38100
+      mmTop = 4496
+      mmWidth = 139700
+      BandType = 0
+    end
+    object TppLabel
+      UserName = 'Label3'
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Pour la période: 201809, 11/11/2018 au 08/12/2018'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      mmHeight = 4233
+      mmLeft = 38100
+      mmTop = 8992
+      mmWidth = 139700
+      BandType = 0
+    end
+    object TppSystemVariable
+      UserName = 'SystemVariable2'
+      AutoSize = False
+      VarType = vtPageSetDesc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Lucida Console'
+      Font.Size = 10
+      Font.Style = []
+      mmHeight = 4498
+      mmLeft = 170180
+      mmTop = 0
+      mmWidth = 25400
+      BandType = 0
+    end
+    object TppLabel
+      UserName = 'Label4'
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'V-MOBILE'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Lucida Console'
+      Font.Size = 6
+      Font.Style = []
+      mmHeight = 2117
+      mmLeft = 74168
+      mmTop = 17463
+      mmWidth = 30290
+      BandType = 0
+    end
+    object TppLine
+      UserName = 'Line1'
+      Position = lpLeft
+      Weight = 0.75
+      mmHeight = 3969
+      mmLeft = 73914
+      mmTop = 17463
+      mmWidth = 254
+      BandType = 0
+    end
+    object TppLabel
+      UserName = 'Label5'
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'V-RA-00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Lucida Console'
+      Font.Size = 6
+      Font.Style = []
+      mmHeight = 2117
+      mmLeft = 104966
+      mmTop = 17463
+      mmWidth = 30290
+      BandType = 0
+    end
+    object TppLine
+      UserName = 'Line6'
+      Position = lpLeft
+      Weight = 0.75
+      mmHeight = 3969
+      mmLeft = 104712
+      mmTop = 17463
+      mmWidth = 254
+      BandType = 0
+    end
+    object TppLabel
+      UserName = 'Label6'
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'V-RA-01'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Lucida Console'
+      Font.Size = 6
+      Font.Style = []
+      mmHeight = 2117
+      mmLeft = 135763
+      mmTop = 17463
+      mmWidth = 30290
+      BandType = 0
+    end
+    object TppLine
+      UserName = 'Line11'
+      Position = lpLeft
+      Weight = 0.75
+      mmHeight = 3969
+      mmLeft = 135509
+      mmTop = 17463
+      mmWidth = 254
+      BandType = 0
+    end
+    object TppLabel
+      UserName = 'Label7'
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Total'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Lucida Console'
+      Font.Size = 6
+      Font.Style = []
+      mmHeight = 2117
+      mmLeft = 166561
+      mmTop = 17463
+      mmWidth = 30290
+      BandType = 0
+    end
+    object TppLine
+      UserName = 'Line16'
+      Position = lpLeft
+      Weight = 0.75
+      mmHeight = 3969
+      mmLeft = 166307
+      mmTop = 17463
+      mmWidth = 254
+      BandType = 0
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 5330
+    mmPrintPosition = 0
+    object ppDBText5: TppDBText
+      UserName = 'DBTextClasse'
+      Color = clRed
+      DataField = 'DESCRIPTION'
+      DataPipeline = plListeDemandeeMemoire
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 74083
+      BandType = 4
+    end
+    object ppDBText1: TppDBText
+      UserName = 'DBTextExamen'
+      Color = clRed
+      DataField = 'DESCRIPTION'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      ParentDataPipeline = False
+      Transparent = True
+      Visible = False
+      mmHeight = 3704
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 74083
+      BandType = 4
+    end
+    object TppDBText
+      UserName = 'DBText1'
+      Alignment = taRightJustify
+      DataField = 'VMOBILE'
+      DataPipeline = plListeDemandeeMemoire
+      DisplayFormat = '#0;-#0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Lucida Console'
+      Font.Size = 8
+      Font.Style = []
+      mmHeight = 2910
+      mmLeft = 74168
+      mmTop = 0
+      mmWidth = 30290
+      BandType = 4
+    end
+    object TppLine
+      UserName = 'Line2'
+      ParentHeight = True
+      Position = lpLeft
+      Weight = 0.75
+      mmHeight = 5330
+      mmLeft = 73914
+      mmTop = 0
+      mmWidth = 254
+      BandType = 4
+    end
+    object TppDBText
+      UserName = 'DBText2'
+      Alignment = taRightJustify
+      DataField = 'VRA00'
+      DataPipeline = plListeDemandeeMemoire
+      DisplayFormat = '#0;-#0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Lucida Console'
+      Font.Size = 8
+      Font.Style = []
+      mmHeight = 2910
+      mmLeft = 104966
+      mmTop = 0
+      mmWidth = 30290
+      BandType = 4
+    end
+    object TppLine
+      UserName = 'Line7'
+      ParentHeight = True
+      Position = lpLeft
+      Weight = 0.75
+      mmHeight = 5330
+      mmLeft = 104712
+      mmTop = 0
+      mmWidth = 254
+      BandType = 4
+    end
+    object TppDBText
+      UserName = 'DBText3'
+      Alignment = taRightJustify
+      DataField = 'VRA01'
+      DataPipeline = plListeDemandeeMemoire
+      DisplayFormat = '#0;-#0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Lucida Console'
+      Font.Size = 8
+      Font.Style = []
+      mmHeight = 2910
+      mmLeft = 135763
+      mmTop = 0
+      mmWidth = 30290
+      BandType = 4
+    end
+    object TppLine
+      UserName = 'Line12'
+      ParentHeight = True
+      Position = lpLeft
+      Weight = 0.75
+      mmHeight = 5330
+      mmLeft = 135509
+      mmTop = 0
+      mmWidth = 254
+      BandType = 4
+    end
+    object TppDBText
+      UserName = 'DBText4'
+      Alignment = taRightJustify
+      DataField = 'Total'
+      DataPipeline = plListeDemandeeMemoire
+      DisplayFormat = '##;-##'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Lucida Console'
+      Font.Size = 8
+      Font.Style = []
+      mmHeight = 2910
+      mmLeft = 166561
+      mmTop = 0
+      mmWidth = 30290
+      BandType = 4
+    end
+    object TppLine
+      UserName = 'Line17'
+      ParentHeight = True
+      Position = lpLeft
+      Weight = 0.75
+      mmHeight = 5330
+      mmLeft = 166307
+      mmTop = 0
+      mmWidth = 254
+      BandType = 4
+    end
+  end
+  object ppSummaryBand1: TppSummaryBand
+    mmBottomOffset = 0
+    mmHeight = 3704
+    mmPrintPosition = 0
+    object ppLabel6: TppLabel
+      UserName = 'LabelGrandTotal'
+      Caption = 'Grand Total:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 56092
+      mmTop = 0
+      mmWidth = 17463
+      BandType = 7
+    end
+    object ppShape2: TppShape
+      UserName = 'Shape2'
+      ParentWidth = True
+      mmHeight = 762
+      mmLeft = 0
+      mmTop = 3704
+      mmWidth = 199390
+      BandType = 7
+    end
+    object TppDBCalc
+      UserName = 'DBCalc3'
+      Alignment = taRightJustify
+      DataField = 'VMOBILE'
+      DataPipeline = plListeDemandeeMemoire
+      DisplayFormat = '#0;-#0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Lucida Console'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      mmHeight = 2910
+      mmLeft = 74168
+      mmTop = 0
+      mmWidth = 30290
+      BandType = 7
+    end
+    object TppLine
+      UserName = 'Line5'
+      ParentHeight = True
+      Position = lpLeft
+      Weight = 0.75
+      mmHeight = 3704
+      mmLeft = 73914
+      mmTop = 0
+      mmWidth = 254
+      BandType = 7
+    end
+    object TppDBCalc
+      UserName = 'DBCalc6'
+      Alignment = taRightJustify
+      DataField = 'VRA00'
+      DataPipeline = plListeDemandeeMemoire
+      DisplayFormat = '#0;-#0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Lucida Console'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      mmHeight = 2910
+      mmLeft = 104966
+      mmTop = 0
+      mmWidth = 30290
+      BandType = 7
+    end
+    object TppLine
+      UserName = 'Line10'
+      ParentHeight = True
+      Position = lpLeft
+      Weight = 0.75
+      mmHeight = 3704
+      mmLeft = 104712
+      mmTop = 0
+      mmWidth = 254
+      BandType = 7
+    end
+    object TppDBCalc
+      UserName = 'DBCalc9'
+      Alignment = taRightJustify
+      DataField = 'VRA01'
+      DataPipeline = plListeDemandeeMemoire
+      DisplayFormat = '#0;-#0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Lucida Console'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      mmHeight = 2910
+      mmLeft = 135763
+      mmTop = 0
+      mmWidth = 30290
+      BandType = 7
+    end
+    object TppLine
+      UserName = 'Line15'
+      ParentHeight = True
+      Position = lpLeft
+      Weight = 0.75
+      mmHeight = 3704
+      mmLeft = 135509
+      mmTop = 0
+      mmWidth = 254
+      BandType = 7
+    end
+    object TppDBCalc
+      UserName = 'DBCalc12'
+      Alignment = taRightJustify
+      DataField = 'Total'
+      DataPipeline = plListeDemandeeMemoire
+      DisplayFormat = '#0;-#0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Lucida Console'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      mmHeight = 2910
+      mmLeft = 166561
+      mmTop = 0
+      mmWidth = 30290
+      BandType = 7
+    end
+    object TppLine
+      UserName = 'Line20'
+      ParentHeight = True
+      Position = lpLeft
+      Weight = 0.75
+      mmHeight = 3704
+      mmLeft = 166307
+      mmTop = 0
+      mmWidth = 254
+      BandType = 7
+    end
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'CLASSE'
+    DataPipeline = plListeDemandeeMemoire
+    NewPage = True
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      PrintHeight = phDynamic
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      PrintHeight = phDynamic
+      mmBottomOffset = 0
+      mmHeight = 5330
+      mmPrintPosition = 0
+      object ppShape1: TppShape
+        UserName = 'Shape1'
+        ParentWidth = True
+        mmHeight = 265
+        mmLeft = 0
+        mmTop = 5027
+        mmWidth = 199390
+        BandType = 5
+        GroupNo = 0
+      end
+      object ppLabel5: TppLabel
+        UserName = 'LabelTotalClasse'
+        Caption = 'Total Classe:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial'
+        Font.Size = 8
+        Font.Style = [fsBold]
+        Transparent = True
+        mmHeight = 3704
+        mmLeft = 54769
+        mmTop = 0
+        mmWidth = 18785
+        BandType = 5
+        GroupNo = 0
+      end
+      object TppDBCalc
+        UserName = 'DBCalc2'
+        Alignment = taRightJustify
+        DataField = 'VMOBILE'
+        DataPipeline = plListeDemandeeMemoire
+        DisplayFormat = '#0;-#0'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Lucida Console'
+        Font.Size = 8
+        Font.Style = [fsBold]
+        ResetGroup = ppGroup1
+        mmHeight = 2910
+        mmLeft = 74168
+        mmTop = 0
+        mmWidth = 30290
+        BandType = 5
+        GroupNo = 0
+      end
+      object TppLine
+        UserName = 'Line4'
+        ParentHeight = True
+        Position = lpLeft
+        Weight = 0.75
+        mmHeight = 5330
+        mmLeft = 73914
+        mmTop = 0
+        mmWidth = 254
+        BandType = 5
+        GroupNo = 0
+      end
+      object TppDBCalc
+        UserName = 'DBCalc5'
+        Alignment = taRightJustify
+        DataField = 'VRA00'
+        DataPipeline = plListeDemandeeMemoire
+        DisplayFormat = '#0;-#0'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Lucida Console'
+        Font.Size = 8
+        Font.Style = [fsBold]
+        ResetGroup = ppGroup1
+        mmHeight = 2910
+        mmLeft = 104966
+        mmTop = 0
+        mmWidth = 30290
+        BandType = 5
+        GroupNo = 0
+      end
+      object TppLine
+        UserName = 'Line9'
+        ParentHeight = True
+        Position = lpLeft
+        Weight = 0.75
+        mmHeight = 5330
+        mmLeft = 104712
+        mmTop = 0
+        mmWidth = 254
+        BandType = 5
+        GroupNo = 0
+      end
+      object TppDBCalc
+        UserName = 'DBCalc8'
+        Alignment = taRightJustify
+        DataField = 'VRA01'
+        DataPipeline = plListeDemandeeMemoire
+        DisplayFormat = '#0;-#0'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Lucida Console'
+        Font.Size = 8
+        Font.Style = [fsBold]
+        ResetGroup = ppGroup1
+        mmHeight = 2910
+        mmLeft = 135763
+        mmTop = 0
+        mmWidth = 30290
+        BandType = 5
+        GroupNo = 0
+      end
+      object TppLine
+        UserName = 'Line14'
+        ParentHeight = True
+        Position = lpLeft
+        Weight = 0.75
+        mmHeight = 5330
+        mmLeft = 135509
+        mmTop = 0
+        mmWidth = 254
+        BandType = 5
+        GroupNo = 0
+      end
+      object TppDBCalc
+        UserName = 'DBCalc11'
+        Alignment = taRightJustify
+        DataField = 'Total'
+        DataPipeline = plListeDemandeeMemoire
+        DisplayFormat = '#0;-#0'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Lucida Console'
+        Font.Size = 8
+        Font.Style = [fsBold]
+        ResetGroup = ppGroup1
+        mmHeight = 2910
+        mmLeft = 166561
+        mmTop = 0
+        mmWidth = 30290
+        BandType = 5
+        GroupNo = 0
+      end
+      object TppLine
+        UserName = 'Line19'
+        ParentHeight = True
+        Position = lpLeft
+        Weight = 0.75
+        mmHeight = 5330
+        mmLeft = 166307
+        mmTop = 0
+        mmWidth = 254
+        BandType = 5
+        GroupNo = 0
+      end
+    end
+  end
+  object ppGroup2: TppGroup
+    BreakName = 'SOUS_CLASSE'
+    DataPipeline = plListeDemandeeMemoire
+    ReprintOnSubsequentPage = False
+    UserName = 'Group2'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    object ppGroupHeaderBand2: TppGroupHeaderBand
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand2: TppGroupFooterBand
+      mmBottomOffset = 0
+      mmHeight = 5330
+      mmPrintPosition = 0
+      object ppLabel4: TppLabel
+        UserName = 'LabelSousTotal'
+        Caption = 'Sous-Total:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Arial'
+        Font.Size = 8
+        Font.Style = [fsBold]
+        Transparent = True
+        mmHeight = 3704
+        mmLeft = 57150
+        mmTop = 0
+        mmWidth = 16404
+        BandType = 5
+        GroupNo = 1
+      end
+      object TppDBCalc
+        UserName = 'DBCalc1'
+        Alignment = taRightJustify
+        DataField = 'VMOBILE'
+        DataPipeline = plListeDemandeeMemoire
+        DisplayFormat = '#0;-#0'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Lucida Console'
+        Font.Size = 8
+        Font.Style = []
+        ResetGroup = ppGroup2
+        mmHeight = 2910
+        mmLeft = 74168
+        mmTop = 0
+        mmWidth = 30290
+        BandType = 5
+        GroupNo = 1
+      end
+      object TppLine
+        UserName = 'Line3'
+        ParentHeight = True
+        Position = lpLeft
+        Weight = 0.75
+        mmHeight = 5330
+        mmLeft = 73914
+        mmTop = 0
+        mmWidth = 254
+        BandType = 5
+        GroupNo = 1
+      end
+      object TppDBCalc
+        UserName = 'DBCalc4'
+        Alignment = taRightJustify
+        DataField = 'VRA00'
+        DataPipeline = plListeDemandeeMemoire
+        DisplayFormat = '#0;-#0'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Lucida Console'
+        Font.Size = 8
+        Font.Style = []
+        ResetGroup = ppGroup2
+        mmHeight = 2910
+        mmLeft = 104966
+        mmTop = 0
+        mmWidth = 30290
+        BandType = 5
+        GroupNo = 1
+      end
+      object TppLine
+        UserName = 'Line8'
+        ParentHeight = True
+        Position = lpLeft
+        Weight = 0.75
+        mmHeight = 5330
+        mmLeft = 104712
+        mmTop = 0
+        mmWidth = 254
+        BandType = 5
+        GroupNo = 1
+      end
+      object TppDBCalc
+        UserName = 'DBCalc7'
+        Alignment = taRightJustify
+        DataField = 'VRA01'
+        DataPipeline = plListeDemandeeMemoire
+        DisplayFormat = '#0;-#0'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Lucida Console'
+        Font.Size = 8
+        Font.Style = []
+        ResetGroup = ppGroup2
+        mmHeight = 2910
+        mmLeft = 135763
+        mmTop = 0
+        mmWidth = 30290
+        BandType = 5
+        GroupNo = 1
+      end
+      object TppLine
+        UserName = 'Line13'
+        ParentHeight = True
+        Position = lpLeft
+        Weight = 0.75
+        mmHeight = 5330
+        mmLeft = 135509
+        mmTop = 0
+        mmWidth = 254
+        BandType = 5
+        GroupNo = 1
+      end
+      object TppDBCalc
+        UserName = 'DBCalc10'
+        Alignment = taRightJustify
+        DataField = 'Total'
+        DataPipeline = plListeDemandeeMemoire
+        DisplayFormat = '#0;-#0'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Lucida Console'
+        Font.Size = 8
+        Font.Style = []
+        ResetGroup = ppGroup2
+        mmHeight = 2910
+        mmLeft = 166561
+        mmTop = 0
+        mmWidth = 30290
+        BandType = 5
+        GroupNo = 1
+      end
+      object TppLine
+        UserName = 'Line18'
+        ParentHeight = True
+        Position = lpLeft
+        Weight = 0.75
+        mmHeight = 5330
+        mmLeft = 166307
+        mmTop = 0
+        mmWidth = 254
+        BandType = 5
+        GroupNo = 1
+      end
+    end
+  end
+  object ppGroup3: TppGroup
+    BreakName = 'CLASSE_SOUSC_EXAMEN'
+    DataPipeline = plListeDemandeeMemoire
+    ReprintOnSubsequentPage = False
+    UserName = 'Group3'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    object ppGroupHeaderBand3: TppGroupHeaderBand
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand3: TppGroupFooterBand
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+  end
+  object TraCodeModule
+    ProgramStream = {
+      01060D54726156617250726F6772616D094368696C645479706502110B50726F
+      6772616D4E616D6506095661726961626C65730B50726F6772616D5479706507
+      0B747450726F63656475726506536F75726365064170726F6365647572652056
+      61726961626C65733B0D0A7661720D0A20202067436C6173736550203A207374
+      72696E673B0D0A626567696E0D0A0D0A656E643B0D0A0001060F547261457665
+      6E7448616E646C65720B50726F6772616D4E616D65061144657461696C426566
+      6F72655072696E740B50726F6772616D54797065070B747450726F6365647572
+      6506536F757263650C7E03000070726F6365647572652044657461696C426566
+      6F72655072696E743B0D0A626567696E0D0A20206966205265706F72742E4461
+      7461706970656C696E65203C3E206E696C207468656E0D0A2020696620526570
+      6F72742E44617461706970656C696E655B27434C415353455F534F5553435F45
+      58414D454E275D203D20275827207468656E0D0A2020626567696E200D0A2020
+      202020646254657874436C617373652E76697369626C65203A3D2066616C7365
+      3B0D0A20202020206462546578744578616D656E2E76697369626C65203A3D20
+      747275653B0D0A202020202044657461696C2E56697369626C65202020202020
+      203A3D20547275653B0D0A2020656E640D0A2020656C73650D0A202062656769
+      6E0D0A2020202044657461696C2E56697369626C65202020202020203A3D2028
+      5265706F72742E44617461706970656C696E655B27434C415353455F534F5553
+      435F4558414D454E275D203D20274B2729206F720D0A20202020202020202020
+      202020202020202020202020202020202020285265706F72742E446174617069
+      70656C696E655B27434C415353455F534F5553435F4558414D454E275D203D20
+      27522729206F720D0A2020202020202020202020202020202020202020202020
+      2020202020285265706F72742E44617461706970656C696E655B27434C415353
+      455F534F5553435F4558414D454E275D203D2027412729206F720D0A20202020
+      202020202020202020202020202020202020202020202020285265706F72742E
+      44617461706970656C696E655B27434C415353455F534F5553435F4558414D45
+      4E275D203D20275027293B0D0A202020206966205265706F72742E4461746170
+      6970656C696E655B27434C415353455F534F5553435F4558414D454E275D203D
+      20274127207468656E0D0A2020202020202067436C61737365503A3D2741270D
+      0A20202020656C73650D0A202020206966205265706F72742E44617461706970
+      656C696E655B27434C415353455F534F5553435F4558414D454E275D203D2027
+      5027207468656E0D0A2020202020202067436C61737365503A3D2750273B2020
+      20202020202020202020202020202020202020200D0A20202020646254657874
+      436C617373652E76697369626C65203A3D20547275653B0D0A20202020646254
+      6578744578616D656E2E76697369626C65203A3D2066616C73653B0D0A202065
+      6E643B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506064465746169
+      6C094576656E744E616D65060B4265666F72655072696E74074576656E744944
+      02180001060F5472614576656E7448616E646C65720B50726F6772616D4E616D
+      65061B47726F7570466F6F74657242616E64324265666F72655072696E740B50
+      726F6772616D54797065070B747450726F63656475726506536F757263650C6C
+      05000070726F6365647572652047726F7570466F6F74657242616E6432426566
+      6F72655072696E743B0D0A766172206C6256697369626C65203A20626F6F6C65
+      616E3B0D0A20202020692020202020202020203A20696E74656765723B0D0A20
+      2020206C646243616C632020203A20547070444243616C633B0D0A626567696E
+      0D0A20206966205265706F72742E44617461706970656C696E65203C3E206E69
+      6C207468656E0D0A2020626567696E0D0A20202020696620285265706F72742E
+      44617461706970656C696E655B27434C415353455F534F5553435F4558414D45
+      4E275D203D2027582729206F72200D0A20202020202020285265706F72742E44
+      617461706970656C696E655B27434C415353455F534F5553435F4558414D454E
+      275D203D2027592729206F722020200D0A20202020202020285265706F72742E
+      44617461706970656C696E655B27434C415353455F534F5553435F4558414D45
+      4E275D203D2027732729206F72200D0A20202020202020285265706F72742E44
+      617461706970656C696E655B27434C415353455F534F5553435F4558414D454E
+      275D203D2027742729206F7220202020202020200D0A20202020202020285265
+      706F72742E44617461706970656C696E655B27434C415353455F534F5553435F
+      4558414D454E275D203D2027632729207468656E200D0A20202020626567696E
+      0D0A20202020202020696620285265706F72742E44617461706970656C696E65
+      5B27434C415353455F534F5553435F4558414D454E275D203D20275827292061
+      6E64202867436C6173736550203D2027412729207468656E0D0A202020202020
+      2020202047726F7570466F6F74657242616E64322E56697369626C653A3D4661
+      6C73650D0A20202020202020656C73650D0A2020202020202020202047726F75
+      70466F6F74657242616E64322E56697369626C653A3D547275653B0D0A202020
+      202020206C6256697369626C65203A3D20285265706F72742E44617461706970
+      656C696E655B27434C415353455F534F5553435F4558414D454E275D20203D20
+      275827290D0A2020202020202020202020202020202020202020206F72200D0A
+      2020202020202020202020202020202020202020285265706F72742E44617461
+      706970656C696E655B27434C415353455F534F5553435F4558414D454E275D20
+      203D20275927290D0A2020202020202020202020202020202020202020206F72
+      200D0A2020202020202020202020202020202020202020285265706F72742E44
+      617461706970656C696E655B27434C415353455F534F5553435F4558414D454E
+      275D20203D20277427293B20202020202020202020202020202020202020200D
+      0A2020202020200D0A20202020202020666F7220693A3D3020746F2047726F75
+      70466F6F74657242616E64322E4F626A656374636F756E742D3120646F0D0A20
+      202020202020626567696E0D0A20202020202020202069662047726F7570466F
+      6F74657242616E64322E4F626A656374735B695D2E436C6173734E616D65203D
+      2027547070444243616C6327207468656E20200D0A2020202020202020206265
+      67696E0D0A2020202020202020202020206C646243616C63203A3D2054707044
+      4243616C632847726F7570466F6F74657242616E64322E4F626A656374735B69
+      5D293B0D0A2020202020202020202020206C646243616C632E56697369626C65
+      3A3D6C6256697369626C653B202020202020202020202020200D0A2020202020
+      20202020656E643B0D0A20202020202020656E643B0D0A20202020656E642020
+      202020200D0A20202020656C73650D0A2020202020202047726F7570466F6F74
+      657242616E64322E56697369626C653A3D46616C73653B0D0A202020200D0A20
+      2020656E643B200D0A656E643B0D0A0D436F6D706F6E656E744E616D65061047
+      726F7570466F6F74657242616E6432094576656E744E616D65060B4265666F72
+      655072696E74074576656E74494402180001060F5472614576656E7448616E64
+      6C65720B50726F6772616D4E616D6506115265706F72744265666F7265507269
+      6E740B50726F6772616D54797065070B747450726F63656475726506536F7572
+      6365066170726F636564757265205265706F72744265666F72655072696E743B
+      0D0A626567696E0D0A20204462546578744578616D656E2E4461746170697065
+      6C696E653A3D5265706F72742E44617461706970656C696E653B0D0A200D0A65
+      6E643B0D0A0D436F6D706F6E656E744E616D6506065265706F7274094576656E
+      744E616D65060B4265666F72655072696E74074576656E74494402010000}
+  end
+  object TdaDataModule
+    object TdaBDEQueryDataView
+      Report = ppReport1
+      UserName = 'Query_Stats'
+      Left = 10
+      Top = 10
+      Width = 529
+      Height = 353
+      AutoSearchTabOrder = 0
+      object plStats: TppChildBDEPipeline
+        AutoCreateFields = False
+        UserName = 'plStats'
+        object TppField
+          FieldAlias = 'CLASSE'
+          FieldName = 'CLASSE'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 0
+        end
+        object TppField
+          FieldAlias = 'SOUS_CLASSE'
+          FieldName = 'SOUS_CLASSE'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 1
+        end
+        object TppField
+          FieldAlias = 'CLASSE_SOUSC_EXAMEN'
+          FieldName = 'CLASSE_SOUSC_EXAMEN'
+          FieldLength = 1
+          DisplayWidth = 1
+          Position = 2
+        end
+        object TppField
+          FieldAlias = 'DESCRIPTION'
+          FieldName = 'DESCRIPTION'
+          FieldLength = 13
+          DisplayWidth = 13
+          Position = 3
+        end
+        object TppField
+          FieldAlias = 'PARENT'
+          FieldName = 'PARENT'
+          FieldLength = 13
+          DisplayWidth = 13
+          Position = 4
+        end
+        object TppField
+          FieldAlias = 'TOTAL'
+          FieldName = 'TOTAL'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 5
+        end
+        object TppField
+          FieldAlias = 'Enregistre'
+          FieldName = 'Enregistre'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 6
+        end
+        object TppField
+          FieldAlias = 'Inscrit'
+          FieldName = 'Inscrit'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 7
+        end
+        object TppField
+          FieldAlias = 'Admis'
+          FieldName = 'Admis'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 8
+        end
+      end
+      object TdaSQL
+        DatabaseName = 'DBRadiologie'
+        DatabaseType = dtOracle
+        DataPipelineName = 'plListeDemandeeMemoire'
+        Description = 'Stats'
+        EditSQLAsText = True
+        SQLText.Strings = (
+          'SELECT '
+          '        1  AS "CLASSE"'
+          '      , 1  AS "SOUS_CLASSE"'
+          '      , '#39'K'#39'  AS "CLASSE_SOUSC_EXAMEN"'
+          '      , '#39'6831 RADIOGRAPHIES GÉNÉRALES'#39'  AS "DESCRIPTION"'
+          '      , '#39'6831 RADIOGRAPHIES GÉNÉRALES'#39'  AS "PARENT"'
+          '      , TO_NUMBER(NULL)  AS "TOTAL"'
+          '      , TO_NUMBER(NULL)  AS "VMOBILE"'
+          '      , TO_NUMBER(NULL)  AS "VRA00"'
+          '      , TO_NUMBER(NULL)  AS "VRA01"'
+          'FROM DUAL'
+          'ORDER BY 1,2,3,4,5')
+        SQLType = sqSQL1
+        object TdaField
+          Alias = 'CLASSE'
+          DataType = dtDouble
+          FieldAlias = 'CLASSE'
+          FieldName = 'CLASSE'
+          SQLFieldName = 'CLASSE'
+        end
+        object TdaField
+          Alias = 'SOUS_CLASSE'
+          DataType = dtDouble
+          FieldAlias = 'SOUS_CLASSE'
+          FieldName = 'SOUS_CLASSE'
+          SQLFieldName = 'SOUS_CLASSE'
+        end
+        object TdaField
+          Alias = 'CLASSE_SOUSC_EXAMEN'
+          FieldAlias = 'CLASSE_SOUSC_EXAMEN'
+          FieldName = 'CLASSE_SOUSC_EXAMEN'
+          SQLFieldName = 'CLASSE_SOUSC_EXAMEN'
+        end
+        object TdaField
+          Alias = 'DESCRIPTION'
+          FieldAlias = 'DESCRIPTION'
+          FieldName = 'DESCRIPTION'
+          SQLFieldName = 'DESCRIPTION'
+        end
+        object TdaField
+          Alias = 'PARENT'
+          FieldAlias = 'PARENT'
+          FieldName = 'PARENT'
+          SQLFieldName = 'PARENT'
+        end
+        object TdaField
+          Alias = 'TOTAL'
+          DataType = dtDouble
+          FieldAlias = 'TOTAL'
+          FieldName = 'TOTAL'
+          SQLFieldName = 'TOTAL'
+        end
+        object TdaField
+          Alias = 'VMOBILE'
+          DataType = dtDouble
+          FieldAlias = 'VMOBILE'
+          FieldName = 'VMOBILE'
+          SQLFieldName = 'VMOBILE'
+        end
+        object TdaField
+          Alias = 'VRA00'
+          DataType = dtDouble
+          FieldAlias = 'VRA00'
+          FieldName = 'VRA00'
+          SQLFieldName = 'VRA00'
+        end
+        object TdaField
+          Alias = 'VRA01'
+          DataType = dtDouble
+          FieldAlias = 'VRA01'
+          FieldName = 'VRA01'
+          SQLFieldName = 'VRA01'
+        end
+      end
+    end
+  end
+end
